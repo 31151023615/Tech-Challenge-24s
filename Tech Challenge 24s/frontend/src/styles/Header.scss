@@ -1,0 +1,21 @@
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  
+
+  .logo {
+    height: 3rem;
+  }
+  .headerButtonsContainer {
+    * {
+      height: 100%;
+    }
+    button {
+      color: rgb(33, 74, 255);
+      font-weight: 500;
+      text-transform: none;
+    }
+  }
+//box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+// width: 100%;
+}

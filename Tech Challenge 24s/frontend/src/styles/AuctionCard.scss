@@ -1,0 +1,133 @@
+.auction-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background-color: #fff;
+
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #ddd;
+
+    .image-container {
+      width: 100%;
+      max-width: 300px;
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+    }
+
+    .details {
+      flex: 1;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .info {
+        .car-title {
+          font-size: 1.5rem;
+          font-weight: bold;
+        }
+
+        .car-subtitle {
+          color: #666;
+        }
+
+        .car-specs {
+          display: flex;
+          align-items: center;
+          margin-top: 8px;
+          flex-wrap: wrap;
+          padding: 2px 3px; 
+        
+
+          .spec-item {
+            margin-right: 16px;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+
+            //&:before {
+              //content: '•';
+              //margin-right: 8px;
+              //color: #333;
+            //}
+          }
+        }
+
+        .car-location {
+          margin-top: 8px;
+        }
+      }
+
+      .actions {
+        display: flex;
+        justify-content: flex-end;
+      //  align-items: center;
+    //    margin-top: 16px;
+
+        button {
+          margin-right: 30px;
+
+        }
+      }
+    }
+  }
+  .secondaryButton{
+    background-color: #ffffff;
+    color: #b90000;
+    border:1px solid #b90000;
+    &:hover{
+      background-color:#b90000;
+      color: #ffffff;
+    }
+   ;
+   margin-top: 24px;
+  }
+
+  .footer {
+    padding: 20px 50px;
+    border-top: 1px solid #ddd;
+    background-color: #f9f9f9;
+
+    .footer-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+
+      .footer-item {
+        flex: 1;
+        min-width: 120px;
+
+        .footer-title {
+          color: #666;
+        }
+
+        .footer-value {
+          font-size: 1.1rem;
+        }
+
+        &.remaining-time {
+          display: flex;
+          justify-content: flex-end;
+          align-items: flex-end;
+          flex-direction: column;
+          .footer-value {
+            background-color: #000;
+            color: #fff;
+            padding: 2px 8px;
+            border-radius: 4px;
+            width: fit-content;
+          }
+        }
+      }
+    }
+  }
+}

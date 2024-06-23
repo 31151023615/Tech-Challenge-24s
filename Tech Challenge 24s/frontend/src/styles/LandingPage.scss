@@ -1,0 +1,155 @@
+
+$margin-top: 0px;
+$margin-right: 40px;
+$margin-bottom: 20px;
+$margin-left: 40px;
+
+.auctionACarContainer {
+  background-color: #ffffff;
+  border-radius: 8px;
+  //padding: 20px 80px;
+ // margin: $margin-top $margin-right $margin-bottom $margin-left;
+ 
+ .secondaryButton{
+  background-color: #ffffff;
+  color: #1129ffbb;
+  border:1px solid #1129ffbb;
+  &:hover{
+    background-color:#1129ffbb;
+    color: #ffffff;
+  }
+ ;
+margin-top: 24px;
+
+}
+
+
+  .primaryButton{
+    color: #ffffff;
+    background-color: #1129ffbb;
+    border:1px solid #1129ffbb;
+    &:hover{
+      background-color:#1129ffbb;
+      color: #ffffff;
+    }
+    margin-right: 40px;
+  }
+  .imagePreviewContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 24px;
+    
+
+    .imagePreviewItem {
+      position: relative;
+      display: inline-block;
+
+      .imagePreview {
+        width: 100px; // Adjust the size as needed
+        height: 100px; // Adjust the size as needed
+        object-fit: cover;
+        border: 1px solid #ccc;
+      }
+
+      .removeIcon {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        background-color: rgba(255, 255, 255, 0.671); // Slightly transparent background
+        border-radius: 50%;
+      }
+    }
+  }
+
+}
+
+.aboutEventContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+}
+
+.aboutEventField {
+  margin: 10px 0;
+
+  .MuiFormControl-root {
+    width: 100%;
+  }
+
+  .MuiInputLabel-root {
+    font-size: 1em;
+  }
+
+  .MuiInputBase-root {
+    font-size: 1em;
+  }
+
+  .MuiFormHelperText-root {
+    font-size: 0.9em;
+    color: red;
+  }
+
+  .MuiButton-root {
+    margin-top: 10px;
+  }
+}
+
+.imagePreviewContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.imagePreview {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+@media (max-width: 1200px) {
+  .auctionACarContainer {
+    padding: 15px;
+  }
+
+  .sectionHeading {
+    font-size: 1.4em;
+    display: flex;
+    justify-content: space-between;
+     align-items: center;
+  }
+}
+
+@media (max-width: 992px) {
+  .auctionACarContainer {
+    padding: 10px;
+  }
+
+  .sectionHeading {
+    font-size: 1.3em;
+  }
+}
+
+@media (max-width: 768px) {
+  .auctionACarContainer {
+    padding: 5px;
+  }
+
+  .sectionHeading {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 576px) {
+  .auctionACarContainer {
+    padding: 0;
+  }
+
+  .sectionHeading {
+    font-size: 1.1em;
+  }
+}
